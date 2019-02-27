@@ -10,7 +10,7 @@ pipeline {
 	triggers {
 		/* every hour  at Zero minutes, 1-28 date, Jan-Nov */
   		cron '0 0-23 1-28  1-11 *'
-  		pollSCM 'H/12 * * * *'
+  		pollSCM '0 12 * * *'
 	}	
 
 	stages {
